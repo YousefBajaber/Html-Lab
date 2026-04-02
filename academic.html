@@ -2,75 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 3: Lists & Navigation</title>
+    <title>Task 4: Academic Results Table</title>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="#top-skills">Top Skills</a></li>
-            <li><a href="#tech-i-use">Technologies</a></li>
-            <li><a href="#glossary">Glossary</a></li>
-        </ul>
-    </nav>
-
-    <hr>
-
-    <section id="top-skills">
-        <h2>Top Skills</h2>
-        <ol type="I" start="10">
-            <li>Problem Solving</li>
-            <li>Web Architecture</li>
-            <li>User Interface Design</li>
-        </ol>
-    </section>
-
-    <hr>
-
-    <section id="tech-i-use">
-        <h2>Technologies I Use</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS3</li>
-            <li>JavaScript
-                <ul>
-                    <li>ES6</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="glossary">
-        <h2>Web Development Glossary</h2>
-        <dl>
-            <dt>Frontend</dt>
-            <dd>The part of a website that the user interacts with directly.</dd>
-
-            <dt>Backend</dt>
-            <dd>The server-side of an application that manages data and logic.</dd>
-
-            <dt>API</dt>
-            <dd>A set of functions that allows applications to communicate with each other.</dd>
-
-            <dt>Semantic HTML</dt>
-            <dd>Using tags that describe the meaning of the content, not just its look.</dd>
-        </dl>
-    </section>
-
-    <hr>
-
-    <section>
-        <h3>Project Countdown</h3>
-        <ol reversed>
-            <li>Launch Website</li>
-            <li>Final Testing</li>
-            <li>Coding</li>
-            <li>Planning</li>
-        </ol>
+    <section id="academic-record">
+        <h2>Academic Record</h2>
+        
+        <table border="1" cellpadding="8" cellspacing="0">
+            
+            <caption>Year 2 Academic Results</caption>
+            
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">Semester 1 &amp; 2</th>
+                    <th scope="col">Credits</th>
+                    <th scope="col">Grade</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="2">Semester 1</th>
+                    <td>Network communication</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Software Engineering Principle</td>
+                    <td>3</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">Semester 2</th>
+                    <td>Database Engneering</td>
+                    <td>3</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>Advanced Programming</td>
+                    <td>4</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">Total Credits / Average Grade</th>
+                    <td><strong>13</strong></td>
+                    <td><strong>A-</strong></td>
+                </tr>
+            </tfoot>
+            
+        </table>
     </section>
 
 </body>
